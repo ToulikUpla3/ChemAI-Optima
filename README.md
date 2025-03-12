@@ -15,6 +15,17 @@ This project uses GANs for generative modeling, Autoencoders for anomaly detecti
 - `src/`: Source code for models and data processing.
 - `results/`: Saved models and outputs.
 
+## Dataset Information
+The following datasets are included in the `data/` directory:
+1. **Cement Slump Dataset** (`cement_slump.csv`):
+   - Contains chemical process data for cement production.
+   - Used for process optimization.
+
+2. **CIFAR-10 Dataset** (`cifar-10/`):
+   - Contains 60,000 32x32 color images in 10 classes.
+   - Used for anomaly detection.
+
+
 ## 🚀 How to Run
 1. Clone the repository:
    ```bash

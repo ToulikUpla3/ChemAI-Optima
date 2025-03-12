@@ -1,0 +1,18 @@
+from tensorflow.keras.datasets import cifar10
+import numpy as np
+import os
+
+# Load CIFAR-10 dataset
+(X_train, y_train), (X_test, y_test) = cifar10.load_data()
+
+# Create directories for CIFAR-10 data
+os.makedirs('data/cifar-10/train', exist_ok=True)
+os.makedirs('data/cifar-10/test', exist_ok=True)
+
+# Save training data
+np.save('data/cifar-10/train/X_train.npy', X_train)
+np.save('data/cifar-10/train/y_train.npy', y_train)
+
+# Save testing data
+np.save('data/cifar-10/test/X_test.npy', X_test)
+np.save('data/cifar-10/test/y_test.npy', y_test)
